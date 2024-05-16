@@ -1,0 +1,13 @@
+.nav{
+    background-color:  rgb(250, 200, 61);
+}
+*{
+    color: white;
+}
+.home{
+    background-color:  rgb(38, 42, 76);
+    color: white;
+}
+main,  .resume{
+    background-color:  rgb(38, 42, 76); 
+}

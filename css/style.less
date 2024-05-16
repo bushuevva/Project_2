@@ -1,0 +1,1063 @@
+// --------------------------------переменные--------------------------------
+@yellow: rgb(250, 200, 61);
+@orange:rgb(195, 157, 53);
+@white : white;
+@gray : rgb(57, 57, 57);
+@fon : rgb(221, 221, 221);
+@black : black;
+
+// -------------------------------Страница 1----------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home{
+    background-color: @fon;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    .theme{
+        position: fixed;
+        cursor: pointer;
+        top: 2%;
+        right: 2%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    div:nth-child(1){
+        align-self: center;
+        padding: 0 40px 0 60px ;
+    }
+    h1, h3{
+        text-transform: uppercase;
+        span:nth-child(2){
+            color: @yellow;
+        }
+    }
+    h1{
+        margin-bottom: 5px;
+        font-size: 45pt;
+    }
+    h3{
+        margin-bottom: 10px;
+        font-size: 25pt;
+    }
+    h1 span, h5{
+        font-weight: bold;
+    }
+    h5{
+        background-color: @yellow;
+        padding: 5px;
+        display: inline-block; //ширина по контенту
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: @white;
+        background-color: @yellow;
+        padding: 10px;
+        border-radius: 50px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: @orange;
+        }
+    }
+}
+// ---------------------------Навигация--------------------------- 
+nav{
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    width: 3%;
+    background-color: @yellow;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    img{
+        width: 100%;
+    }
+    .nav_im:hover{
+        filter: invert(100%);
+        cursor: pointer;
+    }
+
+}
+
+// ----------------------------------------------------------------------------------------
+
+main{
+// ---------------------------Боковое меню--------------------------- 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: @fon;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    
+    .header_all{
+        text-transform: uppercase;
+        font-size: 50pt;
+        text-align: center;
+        padding: 2%;
+        border: 1px dotted rgb(64, 64, 64);
+        font-weight: bold; 
+        margin: 40px auto;
+    }
+    .one_stat{
+        width: 100%;
+        background-color: @yellow;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .list{
+        text-align: center;
+        font-size: 16pt;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        li:hover{
+            color: @white;
+            cursor: pointer;
+        }
+        img{
+            width: 15%;
+        }
+
+    }
+// ---------------------------Страница Резюме---------------------------
+    .resume{
+        height: 100vh;
+        padding: 3% 8%;
+        .rows{
+            margin-bottom: 40px;
+            display: flex;
+            gap: 3%;
+
+            p{
+                text-align: justify;
+                font-size: 10pt;
+            }
+        }
+        .tabl{
+            width: 80%;
+            margin: auto;
+        }
+        h3{
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h4{
+            margin-bottom: 10px;
+
+        }
+        .h4_yellow{
+            background-color: @yellow;
+            padding: 5px;
+            color: @white;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .h3_2{
+            margin-top: 40px ;
+        }
+        .rows2{
+            margin-bottom: 80px;
+        }
+        .tochki{
+            border-bottom: 3px dotted black;
+        }
+    }
+
+// ---------------------------Страница Обо мне---------------------------
+    .about_me{
+        padding: 3% 8%;
+        height: 100vh;
+        h3{
+            padding: 4% 2%;
+            font-size: 18pt;
+            font-weight: lighter;
+            span{
+                font-family:sans-serif;
+            }
+        }
+        .bl_text{
+            padding: 0 2%;
+        }
+        .bl_down{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1%;
+            padding: 5% 2%;
+
+            .black{
+                background-color: @black;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 2%;
+
+                .tochki{
+                    border-right: 2px dotted @fon;
+                }
+                .tochki-2{
+                    border-bottom: 2px dotted @fon;
+                }
+            }
+            .black_b{
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                text-align: center;
+                padding: 5%;
+
+                div{
+                    padding: 10%;
+                }
+                .num{
+                    color: @yellow;
+                    font-size: 40pt;
+                    font-weight: bold;
+                }
+                .tx{
+                    font-size: 10pt;
+                    padding-top: 2%;
+                    color: @white;
+                    text-transform: uppercase;
+                }
+            }
+
+            .what_i_do{
+                display: flex;
+                flex-direction: column;
+                gap: 5%;
+
+                h3{
+                    padding-left: 10%;
+                    font-size: 18pt;
+                    font-weight: bold;
+                    margin-bottom: 5%;
+                }
+            }
+            .wh{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                img{
+                    width: 90px;
+                    justify-self: center;
+                }
+                p{
+                    font-size: 10pt;
+                    text-align: justify;
+                    margin-top: 5%;
+                }
+                h5{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 12pt;
+                }
+            }
+        }
+    }
+// ---------------------------Страница Портфолио---------------------------
+    .portfolio{
+        padding: 3% 8%;
+        height: 100vh;
+        .portfolio_stat{
+            ul{
+                list-style-type: none;
+                display: flex;
+                gap: 2%;
+                justify-content: center;
+                font-size: 16pt;
+                text-transform: uppercase;
+
+                li{
+                    cursor: pointer;
+                    &:hover{
+                        font-weight: bold;
+                        color: @white;
+                    }
+                }
+                .active{
+                    font-weight: bold;
+                    color: @white;
+                }
+            }
+        }
+        .portf_img{
+            width: 80%;
+            margin: 20px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            column-gap: 2%;
+            row-gap: 4%;
+
+            img{
+                width: 100%;
+                height: 150px;
+                cursor: pointer;
+            }
+        }
+    }
+// ---------------------------Страница Отзывы---------------------------
+    .testimonials{
+        padding: 3% 8%;
+        height: 100vh;
+        .rows_4{
+            width: 80%;
+            margin: 80px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2%;
+
+            .person{
+               width: 100px; 
+            }
+
+            .col{
+                background-color: @black;
+                padding: 5%;
+                color: @white;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .col>div:nth-child(3){
+                grid-row: 2;
+                grid-column: 1/span 2;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 10px;
+            }
+
+            .star{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .star-text{
+                justify-self: end;
+            }
+        }
+
+        .col>div:nth-child(2){
+            align-self: center;
+            h3, h4, p{
+                margin-bottom: 5px;
+            }
+            
+            h3{
+                color: @yellow;
+                font-size: 14pt;
+            }
+            h4{
+                font-size: 11pt;
+            }
+            p{
+                font-size: 8pt;
+                text-align: justify;
+            }
+
+        }
+    }
+
+// ---------------------------Страница Контакты---------------------------
+    .contact{
+        padding: 3% 8%;
+        box-sizing: border-box;
+        height: 100vh;
+
+        .bl_contact{
+            margin: 60px auto;
+            width: 80%;
+
+            .text_contact{
+                h3{
+                    font-size: 20pt;
+                    font-weight: lighter;
+                    font-family:sans-serif;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                p{
+                    margin-top: 15px;
+                    font-family:sans-serif;
+                    font-weight: lighter;
+                }
+            }
+            .images{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5%;
+                margin-top: 50px;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .cont{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10%;
+                    font-weight: bold;
+
+                    div{
+                        align-self: center;
+                    }
+                    p{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 25pt;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 100px;
+
+        }
+        .mo_3{
+            cursor: pointer;
+        }
+        .map{
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: rgb(231, 210, 217);
+        }
+
+    }
+}
+
+// ----------------------Модальное окно 1----------------------
+@over : rgba(255, 255, 255, 0.731);
+@base: rgb(184, 184, 184);
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @over;
+    display: none;
+
+    .base{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 53%;
+        height: 60%;
+        background-color: @base;
+        box-shadow: 0 0 30px 2px @base;
+    }
+    .popup{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 55%;
+        background-color: @white;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 30px 10px @base;
+
+        .popup_block{
+            width: 75%;
+            justify-self: end;
+            padding: 2%;
+            align-self: center;
+
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 2%;
+                text-align: center;
+            }
+            p{
+                font-size: 12pt;
+                width: 90%;
+                text-align: justify;
+                margin: auto;
+                margin-bottom: 2%;
+            }
+            form{
+                text-align: center;
+
+                .email{
+                    margin-bottom: 2%;
+                    border: none;
+                    border-bottom: 1px solid @gray;
+                    width: 80%;
+                    // margin: 2% 0;
+                    padding: 10px;
+
+                    &::placeholder{
+                        color: @gray;
+                        text-align: center;
+                    }
+                }
+                .submit{
+                    text-transform: uppercase;
+                    font-size: 12pt;
+                    border: none;
+                    padding: 12px 58px;
+                    background-color: rgb(193, 192, 192);
+                    border-radius: 30px;
+                    margin: 3% 0;
+                }
+            }
+            .text2{
+                width: 50%;
+            }
+
+        }
+
+        .close_popup{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            cursor: pointer;
+        }
+    }
+    .modal_image {
+        position: absolute;
+        top: 15%;
+        left: 17%;
+        
+        img{
+            width: 280px;
+            height: 400px;
+            box-shadow: 0 0 40px 2px @base;
+        }
+
+    }
+}
+
+// ----------------------Модальное окно 2----------------------
+// @or: rgb(238, 65, 42);
+@or_2: rgb(238, 65, 42);
+@pink: rgb(251, 194, 209);
+@over_3 : rgba(240, 214, 197, 0.214);
+.overlay_contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @over_3;
+    display: none;
+
+    .base_contact{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 53%;
+        height: 60%;
+        background-color: @or_2;
+        box-shadow: 0 0 30px 2px @or_2;
+    }
+    .popup_contact{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 55%;
+        background-color: @white;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 30px 10px @or_2;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        .popup_block_contact{
+            width: 75%;
+            justify-self: center;
+            padding: 2%;
+            align-self: center;
+
+            h1{
+                text-transform: uppercase;
+                margin-bottom: 10%;
+                text-align: center;
+                color: @or_2;
+                justify-content: center;
+            }
+            form{
+                text-align: center;
+
+                .inp_modal{
+                    margin-bottom: 2%;
+                    border: none;
+                    border-bottom: 1px solid @gray;
+                    width: 100%;
+                    padding: 10px;
+                    color: @gray;
+
+                    &::placeholder{
+                        color: @gray;
+                        text-align: center;
+                    }
+                }
+                .submit{
+                    text-transform: uppercase;
+                    font-size: 12pt;
+                    border: none;
+                    padding: 12px 58px;
+                    background-color: @or_2;
+                    color: @white;
+                    border-radius: 30px;
+                    margin: 5% 0;
+                    cursor: pointer;
+                }
+            }
+            .icons{
+                justify-content: center;
+                margin: 2%;
+                display: flex;
+                gap: 15px;
+                img{
+                    width: 35px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .close_popup_contact{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            cursor: pointer;
+        }
+        .im_modal{
+            img{
+                height: 390px;
+            }
+        }
+    }
+    .modal_image {
+        position: absolute;
+        top: 15%;
+        left: 17%;
+        
+        img{
+            width: 280px;
+            height: 400px;
+            box-shadow: 0 0 40px 2px @base;
+        }
+
+    }
+}
+// ----------------------Модальное окно 3----------------------
+@green: rgb(17, 48, 34);
+@pink: rgb(234, 102, 92);
+@l_green: rgba(33, 119, 96, 0.388);
+.overlay_sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @l_green;
+    display: none;
+
+    .base_sale{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 53%;
+        height: 60%;
+        background-color: @green;
+        box-shadow: 0 0 30px 2px @green;
+        border-radius: 15px;
+    }
+    .popup_sale{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 55%;
+        background-color: @l_green;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 30px 10px @green;
+        border-radius: 15px;
+
+        .im_modal1{
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .im_modal2{
+            img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .popup_block_sale{
+            width: 75%;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 30px;
+
+            h1{
+                text-transform: uppercase;
+                text-align: center;
+                color: @pink;
+                justify-content: center;
+                font-size: 15pt;
+                font-weight: lighter;
+            }
+            .nums{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                .fif{
+                    font-size: 100pt;
+                    font-weight: bold;
+                    color: beige;
+                }
+                .proc{
+                    font-size: 20pt;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        color: beige;
+                    }
+                    p:nth-child(1){
+                        font-size: 45pt;
+                    }
+                }
+            }
+            .but{
+                margin-top: 25px;
+                text-align: center;
+                button{
+                    border: none;
+                    border-radius: 30px;
+                    color: @white;
+                    background-color: @pink;
+                    padding: 12pt 24pt;
+                    font-size: 12pt;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .close_popup_sale{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            cursor: pointer;
+        }
+        .im_modal{
+            img{
+                height: 390px;
+            }
+        }
+    }
+}
+// ----------------------Модальное окно 4----------------------
+@blue: rgb(71, 153, 215);
+@b_blue: rgba(114, 185, 239, 0.286);
+@wh: rgb(238, 242, 244);
+.overlay_cookie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @b_blue;
+    display: none;
+
+    .base_cookie{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 53%;
+        height: 60%;
+        background-color: @blue;
+        box-shadow: 0 0 30px 2px @blue;
+    }
+    .popup_cookie{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 55%;
+        background-color: @wh;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 30px 10px @blue;
+
+        .imm_modal5{
+            img{
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .popup_block_cookie{
+            width: 75%;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 30px;
+
+            h1{
+                text-align: center;
+                justify-content: center;
+                font-size: 20pt;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            p{
+                margin-top: 10px;
+                text-align: center;
+            }
+            .but_cook{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 50%;
+                margin: 40px auto 0 auto;
+                button{
+                    border: none;
+                    color: @white;
+                    background-color: @blue;
+                    padding: 12pt 24pt;
+                    font-size: 12pt;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .close_popup_cookie{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// ---------------------------------------------------------------
+@media screen and (max-width: 600px) {
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        overflow: scroll;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            margin-bottom: 5px;
+            font-size: 35pt;
+        }
+        h3{
+            margin-bottom: 10px;
+            font-size: 25pt;
+        }
+    }
+    nav{
+        width: 4%;
+        padding: 2px;
+    }
+    main{
+        display: flex;
+        overflow: scroll;
+        height: 100%;
+        .one_stat{
+            display: none;
+        }
+        .header_all{
+            font-size: 30pt;
+        }
+        .about_me{
+            h3{
+                font-size: 16pt;
+            }
+            .bl_down{
+                .black_b{
+                    box-sizing: border-box;
+                    .num{
+                        font-size: 20pt;
+                    }
+                    .tx{
+                        font-size: 10pt;
+                    }
+                    .numbers{
+                        padding: 50% 0px;
+                    }
+                }
+                .what_i_do{
+                    h3{
+                        font-size: 15pt;
+                    }
+                }
+                .wh{
+                    img{
+                        width: 50px;
+                        align-self: center;
+                    }
+                    p{
+                        font-size: 8pt;
+                    }
+                    h5{
+                        font-size: 9pt;
+                    }
+                }
+            }
+        }
+        .resume{
+            .rows{
+                p{
+                    font-size: 8pt;
+                }
+            }
+            h4{
+                font-size: 10pt;
+            }
+            h3{
+                font-size: 12pt;
+            }
+        }
+        .portfolio{
+            padding: 3% 8%;
+            height: 100%;
+            box-sizing: border-box;
+            .portfolio_stat{
+                ul{
+                    font-size: 14pt;
+                }
+            }
+            .portf_img{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .testimonials{
+            .rows_4{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                .star{
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            .col>div:nth-child(2){
+                h3{
+                    font-size: 11pt;
+                }
+                h4{
+                    font-size: 9pt;
+                }
+                p{
+                    font-size: 6pt;
+                }
+            }
+        }
+        .contact{
+            .bl_contact{
+                margin: 60px auto;
+                width: 80%;
+                .text_contact{
+                    h3{
+                        font-size: 18pt;
+                    }
+                }
+                .images{
+                    margin-top: 100px;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                        align-items: center;
+                    }
+                    .cont{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        img{
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+            h2{
+                font-size: 20pt;
+            }
+    
+        }
+
+
+
+    } 
+  }

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" title="theme" href="#">
+    <script src="js/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <nav>
+        <img class="nav_im home_li" src="img/home.png" alt="">
+        <img src="img/dot.png" alt="">
+        <img class="nav_im user_li" src="img/user.png" alt="" data="1">
+        <img src="img/dot.png" alt="">
+        <img class="nav_im brief_li" src="img/briefcase.png" alt="" data="2">
+        <img src="img/dot.png" alt="">
+        <img class="nav_im monitor_li" src="img/monitor2.png" alt="" data="3">
+        <img src="img/dot.png" alt="">
+        <img class="nav_im megaph_li" src="img/megaphone.png" alt="" data="4">
+        <img src="img/dot.png" alt="">
+        <img class="nav_im teleg_li" src="img/telegram.png" alt="" data="5">
+    </nav>
+
+    <header class="home">
+        <div>
+            <h3> Hi there!</h3>
+            <h1>
+                <span>I'm</span>
+                <span>Benjamin</span>
+            </h1>
+            <h5>Graphic Designer/Photographer</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident corporis placeat? Ab totam distinctio provident tempore! Dolor beatae cumque nihil nam asperiores, ullam consequatur vero nisi quam nemo. Eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatibus.</p>
+            <a href="#" class="more_about">More about me</a>
+        </div>
+
+        <div>
+            <img src="img/img1.png" alt="">
+        </div>
+        <div class="theme">
+            <svg class="theme_svg" data-theme="light" width="40px" height="40px" 
+            style="display: none;" 
+            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z" fill="#ffffff"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3C12.75 3.41421 12.4142 3.75 12 3.75C11.5858 3.75 11.25 3.41421 11.25 3V2C11.25 1.58579 11.5858 1.25 12 1.25ZM4.39861 4.39861C4.6915 4.10572 5.16638 4.10572 5.45927 4.39861L5.85211 4.79145C6.145 5.08434 6.145 5.55921 5.85211 5.85211C5.55921 6.145 5.08434 6.145 4.79145 5.85211L4.39861 5.45927C4.10572 5.16638 4.10572 4.6915 4.39861 4.39861ZM19.6011 4.39887C19.894 4.69176 19.894 5.16664 19.6011 5.45953L19.2083 5.85237C18.9154 6.14526 18.4405 6.14526 18.1476 5.85237C17.8547 5.55947 17.8547 5.0846 18.1476 4.79171L18.5405 4.39887C18.8334 4.10598 19.3082 4.10598 19.6011 4.39887ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3C3.41421 11.25 3.75 11.5858 3.75 12C3.75 12.4142 3.41421 12.75 3 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM20.25 12C20.25 11.5858 20.5858 11.25 21 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H21C20.5858 12.75 20.25 12.4142 20.25 12ZM18.1476 18.1476C18.4405 17.8547 18.9154 17.8547 19.2083 18.1476L19.6011 18.5405C19.894 18.8334 19.894 19.3082 19.6011 19.6011C19.3082 19.894 18.8334 19.894 18.5405 19.6011L18.1476 19.2083C17.8547 18.9154 17.8547 18.4405 18.1476 18.1476ZM5.85211 18.1479C6.145 18.4408 6.145 18.9157 5.85211 19.2086L5.45927 19.6014C5.16638 19.8943 4.6915 19.8943 4.39861 19.6014C4.10572 19.3085 4.10572 18.8336 4.39861 18.5407L4.79145 18.1479C5.08434 17.855 5.55921 17.855 5.85211 18.1479ZM12 20.25C12.4142 20.25 12.75 20.5858 12.75 21V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V21C11.25 20.5858 11.5858 20.25 12 20.25Z" fill="#ffffff"/>
+            </svg>
+    
+            <svg class="theme_svg" data-theme="dark" width="40px" height="40px"
+            style="display: block;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#222222"/>
+            </svg>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="one_stat">
+            <div class="photo">
+                <img src="img/img2.png" alt="">
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li class="home_li"> Home</li>
+                    <img src="img/dot.png" alt="">
+                    <li class="list_1" data="1"> About me</li>
+                    <img src="img/dot.png" alt="">
+                    <li class="list_1" data="2"> Resume</li>
+                    <img src="img/dot.png" alt="">
+                    <li class="list_1" data="3"> Portfolio</li>
+                    <img src="img/dot.png" alt="">
+                    <li class="list_1" data="4"> Testimonials</li>
+                    <img src="img/dot.png" alt="">
+                    <li class="list_1" data="5"> Contact</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about_me block" data="1">
+
+            <div class="header_all">
+                About me
+            </div>
+            <h3> I'm <b>Benjamin Smith,</b> <span> Graphic Designer / Photographer</span> </h3>
+            <p class="bl_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum ut deserunt perferendis dicta molestiae, impedit iusto blanditiis excepturi voluptates ratione recusandae quos aliquid temporibus officiis veniam nobis eveniet quia?</p>
+            <div class="bl_down">
+                <div class="black">
+                    <div class="black_b tochki">
+                        <div class="tochki-2 numbers">
+                            <p class="num">15+</p>
+                            <p class="tx">Years expirience</p>
+                        </div>
+                        <div class="numbers">
+                            <p class="num">200+</p>
+                            <p class="tx">Happy clients</p>
+                        </div>
+                    </div>
+                    <div class="black_b">
+                        <div class="tochki-2 numbers">
+                            <p class="num">350+</p>
+                            <p class="tx">Projects done</p>
+                        </div>
+                        <div class="numbers">
+                            <p class="num">45K</p>
+                            <p class="tx">followers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="what_i_do">
+                    <h3>What I Do?</h3>
+                    <div class="wh">
+                        <img src="img/icon1.png" alt="">
+                        <div>
+                            <h5>Print Design</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sequi.</p>
+                        </div>
+                    </div>
+
+                    <div class="wh">
+                        <img src="img/icon2.png" alt="">
+                        <div>
+                            <h5>Web Design</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sequi.</p>
+                        </div>
+                    </div>
+
+                    <div class="wh">
+                        <img src="img/icon3.png" alt="">
+                        <div>
+                            <h5>Photo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sequi.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="resume block" data="2">
+
+            <div class="header_all">
+                Resume
+            </div>
+
+            <div class="tabl">
+                <h3>Education</h3>
+                <div class="rows">
+    
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+    
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+                </div>
+                <div class="tochki"></div>
+                <h3 class="h3_2">Experience</h3>
+                <div class="rows rows2">
+
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+    
+                    <div>
+                        <h4 class="h4_yellow">3000-5000</h4>
+                        <h4>Computer Science</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, nostrum aliquam eius quae atque incidunt ex ipsum hic accusamus accusantium fugit nesciunt repellendus fuga expedita recusandae sapiente at necessitatibus! Totam.</p>
+                    </div>
+    
+                </div> 
+            </div>
+        </section>
+        
+        <section class="portfolio block" data="3">
+
+            <div class="header_all">
+                Portfolio
+            </div>
+
+            <div class="portfolio_stat">
+                <ul>
+                    <li data="1" class="all_li"> All </li>
+                    <li data="2" class="gr_des_li"> Graphic Design </li>
+                    <li data="3" class="web_des_li"> Web Design </li>
+                    <li data="4" class="photo_li"> Photography </li>
+                </ul>
+            </div>
+
+            <div class="portf_img">
+                <img class="all web_des mo_1" src="img/d1.png" alt="">
+                <img class="all gr_des mo_3" src="img/g1.jpeg" alt="">
+                <img class="all photo mo_4" src="img/ph1.jpeg" alt="">
+                <img class="all web_des mo_5" src="img/d2.jpeg" alt="">
+                <img class="all gr_des" src="img/g2.jpeg" alt="">
+                <img class="all photo" src="img/ph2.jpeg" alt="">
+                <img class="all web_des" src="img/d3.jpeg" alt="">
+                <img class="all gr_des" src="img/g3.jpeg" alt="">
+                <img class="all photo" src="img/ph3.jpeg" alt="">
+                <img class="all web_des" src="img/d4.jpeg" alt="">
+                <img class="all gr_des" src="img/g4.jpeg" alt="">
+                <img class="all photo" src="img/ph4.jpeg" alt="">
+            </div>
+
+        </section>
+       
+        <section class="testimonials block" data="4">
+
+            <div class="header_all">
+                Testimonials
+            </div>
+
+            <div class="rows_4">
+
+                <div class="col">
+                    <div>
+                        <img src="img/test.jpeg" alt="" class="person">
+                    </div>
+
+                    <div>
+                        <h3>Lorem, ipsum.</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quasi in! Ipsa?</p>
+
+                    </div>
+
+                    <div>
+                        <div class="star">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <div class="star-text">
+                            Lorem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <img src="img/test2.jpeg" alt="" class="person">
+                    </div>
+
+                    <div>
+                        <h3>Lorem, ipsum.</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quasi in! Ipsa?</p>
+
+                    </div>
+
+                    <div>
+                        <div class="star">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <div class="star-text">
+                            Lorem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <img src="img/test1.jpeg" alt="" class="person">
+                    </div>
+
+                    <div>
+                        <h3>Lorem, ipsum.</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quasi in! Ipsa?</p>
+
+                    </div>
+
+                    <div>
+                        <div class="star">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <div class="star-text">
+                            Lorem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <img src="img/test3.jpeg" alt="" class="person">
+                    </div>
+
+                    <div>
+                        <h3>Lorem, ipsum.</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quasi in! Ipsa?</p>
+
+                    </div>
+
+                    <div>
+                        <div class="star">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <div class="star-text">
+                            Lorem
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+     
+        <section class="contact block" data="5">
+
+            <div class="header_all">
+                Contact
+            </div>
+
+            <div class="bl_contact">
+                <div class="text_contact">
+                    <h3> Feel <span>free</span> to contact me!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum porro praesentium maxime, aut ea temporibus accusamus commodi distinctio reprehenderit, tempora, minima adipisci hic quae dolorem aliquid ducimus qui rem sunt.</p>
+                </div>
+               
+                <div class="images">
+                    <div class="cont">
+                        <img src="img/monitor.png" alt="">
+                        <div>
+                            <p> www.example.com </p>
+                            <p> infoexample.com </p>
+                        </div>
+                    </div>
+
+                    <div class="cont">
+                        <img src="img/telephone.png" alt="">
+                        <div>
+                            <p> +79999999999</p>
+                            <p> +78888888888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map" id="map"></div>
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=ecab9903-e863-4b49-9de7-a5d61e4a43f3&lang=ru_RU"></script>
+
+                <h2>Thanks for patience!</h2>
+               
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ----------------Модальное окно 1---------------- -->
+    <div class="overlay">
+
+        <div class="base"> 
+
+        </div>
+
+        <div class="popup"> 
+            <div class="popup_block">
+                <h1>Название проекта</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni pariatur nesciunt tempora minima nulla odit iure laborum cupiditate nostrum sint, accusamus similique distinctio laboriosam, explicabo nobis nam sequi optio?    
+                </p>
+                <form action="">
+                    <input class="email" type="email" placeholder="name@email.com">
+                    <br>
+                    <input class="submit" type="submit" value="subscribe">
+                </form>
+                <p class="text2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora natus assumenda ipsa, quod odit facilis!
+                </p>
+            </div>
+
+            <div class="close_popup">
+                <svg class="svg_img" width="30px" height="30px" viewBox="0 0 24 24" fill="Gainsboro" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+                    </svg>
+            </div>
+        </div>
+
+        <div class="modal_image"> 
+            <img src="img/modal.jpeg" alt="">
+        </div>
+    </div>
+    <!-- ----------------Модальное окно 2---------------- -->
+    <div class="overlay_contact">
+        <div class="base_contact"></div>
+        
+        <div class="popup_contact">
+            <div class="im_modal">
+                <img src="img/modal3.jpeg" alt="">
+            </div>
+
+            <div class="popup_block_contact">
+                <h1>Contact Me</h1>
+                <form action="">
+                    <input class="inp_modal" type="text" placeholder="Name">
+                    <input class="inp_modal" type="text" class="Phone" placeholder="+7(999)-999-99-99">
+                    <input class="inp_modal" type="email" placeholder="name@email.com">
+                    <br>
+                    <input class="submit" type="submit" value="Send">
+                </form>
+                <p class="icons">
+                    <img src="img/logo.png" alt="">
+                    <img src="img/facebook.png" alt="">
+                    <img src="img/telegram2.png" alt="">
+                </p>
+            </div>
+
+            <div class="close_popup_contact">
+                <svg class="svg_img" width="30px" height="30px" viewBox="0 0 24 24" fill="Gainsboro" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Модальное окно 3---------------- -->
+    <div class="overlay_sale">
+        <div class="base_sale"></div>
+        
+        <div class="popup_sale">
+            <div class="im_modal1">
+                <img src="img/christmas-lights.png" alt="">
+            </div>
+            <div class="popup_block_sale">
+                <h1>Christmas Sale!</h1>
+                <div class="nums">
+                    <div class="fif">
+                        50
+                    </div>
+                    <div class="proc">
+                        <p>%</p>
+                        <p>off</p>
+                    </div>
+
+                </div>
+                <div class="but">
+                    <button> Learn More</button>
+                </div>
+            </div>
+            <div class="im_modal2">
+                <img src="img/gift.png" alt="">
+            </div>
+
+            <div class="close_popup_sale">
+                <svg class="svg_img" width="30px" height="30px" viewBox="0 0 24 24" fill="Gainsboro" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Модальное окно 4---------------- -->
+    <div class="overlay_cookie">
+        <div class="base_cookie"></div>
+        
+        <div class="popup_cookie">
+            <div class="imm_modal5">
+                <img src="img/cookie.png" alt="">
+            </div>
+            <div class="popup_block_cookie">
+                <h1>We use cookies</h1>
+                <p>Please, accept these sweeties to continue enjoying my site! </p>
+                <div class="but_cook">
+                    <button>Mmm...sweet!</button>
+                    <button> Nope.. I am on a diet</button>
+                </div>
+            </div>
+
+            <div class="close_popup_cookie">
+                <svg class="svg_img" width="30px" height="30px" viewBox="0 0 24 24" fill="Gainsboro" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
